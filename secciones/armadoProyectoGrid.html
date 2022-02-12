@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Toctoc</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">    
+    <link rel="stylesheet" href="../icomoon/style.css">
+</head>
+<body>
+    <div class="gridContenedorProyecto">
+
+        <nav class="navbar">
+            <a  href="../index.html"><img class="logoToc" src="../img/logoToctocMenu.png" alt="logo Toctoc"></a>
+            <ul>
+                <li><a href="nosotros.html#seccionTrabajos">Trabajos</a></li>
+                <li><a href="nosotros.html#seccionReferencias">Referencias</a></li>
+                <li><a href="nosotros.html#seccionUsuarios">Usuarios</a></li>
+                <li><a href="nosotros.html#seccionContacto">Contacto</a></li>
+                <li><a href="ingresoCuenta.html">Empresa</a></li>
+            </ul>
+        </nav>
+            
+        <h2 class="tituloEstilos">SELECCIONA EL ESTILO DE TU PROYECTO</h2>
+    
+        <section class="seleccionEstilos">       
+            <div class="estilos">
+                <img class="imgEstilos" src="../img/estiloNordico.jpg" alt="">
+                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+            </div>
+
+            <div class="estilos">
+                <img class="imgEstilos" src="../img/estiloIndustrial.jpg" alt="">
+                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+            </div>
+            
+            <div class="estilos">
+                <img class="imgEstilos" src="../img/muebleMelamina.jpg" alt="">
+                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+            </div>
+        </section>
+
+        <h2 id="seccionFormulario"class="titulo">COMPLETAR FORMULARIO</h2>
+
+        <section  class="seccionEstilos">        
+            <!-- Agrego un modelo de formulario que copie de developer -->
+            <form class="formularioEstilo" action="" method="post">
+                <ul>
+                    <li>
+                        <label class="textForm" for="color">Color:</label>
+                        <input class="inputForm" type="text" id="color" name="user_name">
+                    </li>   
+                    <li>
+                        <label class="textForm" for="medidas">Medidas:</label>
+                        <input class="inputForm" type="text" id="medidas" name="user_name">
+                    </li>
+                    <li>
+                        <label class="textForm" for="maderas">Tipo de Madera:</label>
+                        <input class="inputForm" type="text" id="maderas" name="user_mail">
+                    </li>
+                    <li>
+                        <label class="textForm" for="descripcion">Descripcion:</label>
+                        <textarea class="inputForm" id="msg" name="descripcion"></textarea>
+                    </li>
+                </ul>
+                <button class="btnForm"><a href="#seccionAgenda">Enviar</a></button>
+            </form>
+        </section>
+
+        <h2 id="seccionAgenda"class="titulo">DIA DE REUNION</h2>
+
+        <section class="agendaContent">        
+            <input type="date" name="" id="calendario"> 
+            <button class="btnEstilos"><a href="#seccionFinal">Confirmar</a></button>
+        </section>
+
+        <h2 id="seccionFinal"class="titulo">ESPERE A SER LLAMADO</h2>
+
+        <section class="final">        
+            <img src="../img/ok.png" alt="simbolo ok">
+            <button class="btnEstilos"><a  href="nosotros.html">Volver</a></button>
+        </section>
+    
+        <footer class="footerContent">
+            <a href="https://www.facebook.com/toctocbb" target="_blank"><span class="icon-facebook"></span></a>
+            <a href="https://www.instagram.com/toctocbb/?hl=es" target="_blank"><span class="icon-instagram"></span></a>
+            <span class="icon-whatsapp"></span>
+            <span class="icon-correo"></span>
+        </footer>
+    </div>
+</body>
+</html>
