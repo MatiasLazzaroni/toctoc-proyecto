@@ -101,11 +101,11 @@ a{
 
 /*estilo seccion Nosotros*/
 /*header*/
-.gridContenedorNosotros{
+/*.gridContenedorNosotros{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
-}
+}*/
 .contenedorImagen, .trabajosContent, .seccionesInfo, .presupuestoContent, .referenciasContent{
     grid-column: 1/4;
 }
@@ -127,7 +127,7 @@ a{
 #fondoNosotros{
     background-color: var(--colorFondo);
 }
-.navbar{
+/*.navbar{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -155,13 +155,14 @@ nav ul li a:hover {
     color: var(--colorRojoToc);
     transition: 1s;
 }
+*/
 
 .imagenToc{
     width: 100%;
 }
 /*Informacion*/
 .seccionesInfo{
-    padding: 30px 60px;
+    padding: 20px;
 }
 .textoIntro{
     display: flex;
@@ -169,7 +170,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: rgb(145, 145, 145);
-    padding: 60px 120px;
+    padding: 40px;
     font-size: 30px;
 }
 .infoContent{
@@ -215,12 +216,7 @@ nav ul li a:hover {
 
 
 /*Trabajos*/
-.carruselContenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3c3c3c;
-}
+
 
 
 /*
@@ -350,7 +346,6 @@ nav ul li a:hover {
     color: white;
     display: flex;
     justify-content: space-around;
-
 }
 .tituloContacto{
     margin-bottom: 3%;
@@ -358,7 +353,6 @@ nav ul li a:hover {
 .textoContacto{
     font-size: 15px;
 }
-
 .mapa{
     display: flex;
     justify-content: center;
@@ -675,9 +669,83 @@ header h1 {
 }
 
 @media screen and (max-width: 414px){
-    /*seccion nosotros*/
+    /* seccion nosotros*/
+    *{
+        font-size: 20px;
+    }
+    .seccionesInfo{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textoIntro{
+        margin: 20px;
+        padding: 0px;
+        font-size: 30px;
+    }
+    .icon-home, .icon-asesoramiento, .icon-martillo{
+        margin-bottom: 0px;
+        font-size: 60px;
+    }
+    .infoContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .info{
+        padding: 10px;
+    }
+    .info h3{
+        margin-top: 10px;
+    }
+    .presupuestoContent{
+        padding: 5% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #textoPresup{
+        font-size: 30px;
+         
+    }
+    #textoPresup2{
+        font-size: 20px;
+    }
+    #btnContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
     
-  
+    }
+    .btnProyecto{
+        width: 100px;
+        height: 50px;
+        border: 0px;
+        border-radius: 40px;
+        font-size: 10px;
+        background-color: var(--colorRojoToc);
+        align-items: center;
+    
+    }
+    .textoRef{
+        font-size: 20px;
+        align-items: center;
+    }
+    .gridUsuarioContacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;       
+    }
+    
+    
+    /* Fin seccion nosotros*/
+    
     /* Seccion Armado de Proyecto*/
     .navbar {
         display: flex;
@@ -704,5 +772,5 @@ header h1 {
     .btnEstilos{
         margin-bottom: 30px;
     }
-/* Fin Armado de Proyecto*/
+    /* Fin Armado de Proyecto*/
 }
