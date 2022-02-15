@@ -490,7 +490,7 @@ button{
     padding: 10px;
     outline: none;
     border: 0;
-    width: 200px;
+    width: 250px;
     margin: 10px;
 }
 li{
@@ -728,7 +728,7 @@ header h1 {
     .btnProyecto{
         width: 150px;
         height: 70px;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 10px;
     
     }
