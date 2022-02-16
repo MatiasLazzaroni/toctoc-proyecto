@@ -1,7 +1,27 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+p::selection{
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
+}
+h4::selection{
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
+}
+h3::selection{
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
+}
+h2::selection{
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
+}
+h1::selection{
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
 }
 
 :root{
@@ -273,7 +293,22 @@ nav ul li a:hover {
     border-radius: 40px;
     font-size: 30px;
     background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
 }
+.btnProyecto:hover{
+    background-color: #ba2932; 
+}
+.btnProyecto:active{
+    color: var(--colorRojoToc);
+    background-color: var(--colorFondo);
+    border: 2px solid var(--colorRojoToc);
+}
+
+#textoBtn:hover{
+    color: var(--colorFondo);
+}
+
+
 
 /*Referencias*/
 .referenciasContent{
@@ -732,6 +767,7 @@ header h1 {
         margin-top: 10px;
     
     }
+   
     .textoRef{
         font-size: 20px;
         align-items: center;
