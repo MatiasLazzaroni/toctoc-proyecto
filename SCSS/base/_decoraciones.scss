@@ -1,0 +1,80 @@
+p{
+    &::selection{
+        background-color: $colorRojoToc;
+        color: $colorFondo;
+        }
+}
+h4{
+    &::selection{
+        background-color: $colorRojoToc;
+        color: $colorFondo;
+        }
+}
+h3{
+    &::selection{
+        background-color: $colorRojoToc;
+        color: $colorFondo;
+        }
+}
+h2{
+    &::selection{
+        background-color: $colorRojoToc;
+        color: $colorFondo;
+        }
+}
+h1{
+    &::selection{
+        background-color: $colorRojoToc;
+        color: $colorFondo;
+        }
+}
+a{
+    text-decoration: none;
+    color: $colorFondo;
+}
+//iconMonn//
+.icon-home {
+	&:before {
+		content: "\e900";
+	}
+}
+.icon-asesoramiento {
+	&:before {
+		content: "\e976";
+	}
+}
+.icon-martillo {
+	&:before {
+		content: "\e996";
+	}
+}
+.icon-correo {
+	&:before {
+		content: "\e945";
+	}
+}
+.icon-facebook {
+	&:before {
+		content: "\ea90";
+	}
+}
+.icon-instagram {
+	&:before {
+		content: "\ea92";
+	}
+}
+.icon-whatsapp {
+	&:before {
+		content: "\ea93";
+	}
+}
+.icon-circle-dch {
+	&:before {
+		content: "\ea42";
+	}
+}
+.icon-circle-izq {
+	&:before {
+		content: "\ea44";
+	}
+}

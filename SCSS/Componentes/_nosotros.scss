@@ -1,0 +1,218 @@
+.gridContenedorNosotros{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+        .contenedorImagen {
+        grid-column: 1/4;
+        }
+            .seccionesInfo {
+            grid-column: 1/4;
+            padding: 20px;
+            }
+                .trabajosContent {
+                grid-column: 1/4;
+                }
+                
+                    .presupuestoContent {
+                        grid-column: 1/4;
+                        padding: 5%;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                        .referenciasContent {
+                            grid-column: 1/4;
+                            padding: 5% 15%;
+                            background-color: var(--colorAzulToc);
+                            display: flex;
+                            justify-content: space-between;
+                            justify-content: center;
+                        }
+}
+.gridUsuarioContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column: 1/4;
+    
+}
+.usuarioContent {
+    grid-column:1/2 ;
+    margin-bottom: 80px;
+}
+.inputUsuarioContent{
+    grid-column: 2/4;
+    margin-bottom: 80px;
+}
+#fondoNosotros{
+    background-color: var(--colorFondo);
+}
+.imagenToc{
+    width: 100%;
+}
+/*Informacion*/
+.seccionesInfo{
+    padding: 20px;
+}
+.textoIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(145, 145, 145);
+    padding: 40px;
+    font-size: 30px;
+}
+.infoContent{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin: 10px;
+}
+.infoContent div h3{
+    margin-bottom: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 60px;
+}
+.info h3{
+    margin-top: 40px;
+}
+.info p{
+    text-align: center;
+    color: rgb(145, 145, 145);
+}
+.icon-home, .icon-asesoramiento, .icon-martillo{
+    font-size: 80px;
+    color: rgb(145, 145, 145);
+}
+.icon-home:hover{
+    color: var(--colorRojoToc);
+    transition: 1s;
+}
+.icon-asesoramiento:hover{
+    color: var(--colorRojoToc);
+    transition: 1s;
+}
+.icon-martillo:hover{
+    color: var(--colorRojoToc);
+    transition: 1s;
+}
+/*Presupuesto*/
+.presupuestoContent{
+    padding: 5% ;
+    display: flex;
+    justify-content: space-around;
+}
+#textoPresup{
+    font-size: 40px;
+    
+}
+#textoPresup2{
+    font-size: 25px;
+
+}
+
+.btnProyecto{
+    width: 400px;
+    height: 80px;
+    border: 0px;
+    border-radius: 40px;
+    font-size: 30px;
+    background-color: var(--colorRojoToc);
+    color: var(--colorFondo);
+}
+.btnProyecto:hover{
+    background-color: #ba2932; 
+}
+.btnProyecto:active{
+    color: var(--colorRojoToc);
+    background-color: var(--colorFondo);
+    border: 2px solid var(--colorRojoToc);
+}
+
+#textoBtn:hover{
+    color: var(--colorFondo);
+}
+
+
+
+/*Referencias*/
+.referenciasContent{
+    padding: 5% 15%;
+    background-color: var(--colorAzulToc);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;    
+}
+.referencias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.referencias img{
+    margin: 0 10px;
+}
+.textoRef{
+    font-size: 30px;
+    color: white;
+}
+/*Usuario*/
+.usuarioContent{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;   
+}
+.inputUsuarioContent{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inputUsuario{
+    margin: 7px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;   
+}
+.textUsuarioA{
+   width: 70%;
+   font-size: 30px;
+   margin-bottom: 2%;
+   
+}
+.textUsuarioB{
+    width: 70%;
+    font-size: 20px;
+}
+.btnIngresar{
+    color: var(--colorRojoToc);
+}
+
+/*Contactos*/
+.contactoContenedor{
+    padding: 3%;
+    margin-bottom: 20px;
+    background-color: #3c3c3c;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.tituloContacto{
+    margin-bottom: 3%;
+}
+.textoContacto{
+    font-size: 15px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
