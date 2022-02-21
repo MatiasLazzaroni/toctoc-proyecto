@@ -1,40 +1,10 @@
-.gridContenedorNosotros{
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-        .contenedorImagen {
-        grid-column: 1/4;
-        }
-            .seccionesInfo {
-            grid-column: 1/4;
-            padding: 20px;
-            }
-                .trabajosContent {
-                grid-column: 1/4;
-                }
-                
-                    .presupuestoContent {
-                        grid-column: 1/4;
-                        padding: 5%;
-                        display: flex;
-                        justify-content: space-around;
-                    }
-                        .referenciasContent {
-                            grid-column: 1/4;
-                            padding: 5% 15%;
-                            background-color: var(--colorAzulToc);
-                            display: flex;
-                            justify-content: space-between;
-                            justify-content: center;
-                        }
-}
+
 .gridUsuarioContacto{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-column: 1/4;
-    
+    grid-column: 1/4;    
 }
 .usuarioContent {
     grid-column:1/2 ;
@@ -45,7 +15,7 @@
     margin-bottom: 80px;
 }
 #fondoNosotros{
-    background-color: var(--colorFondo);
+    background-color: $colorFondo;
 }
 .imagenToc{
     width: 100%;
@@ -91,16 +61,18 @@
     font-size: 80px;
     color: rgb(145, 145, 145);
 }
-.icon-home:hover{
-    color: var(--colorRojoToc);
+.icon-home{
+    &:hover{
+    color: $colorRojoToc;
     transition: 1s;
+    }
 }
 .icon-asesoramiento:hover{
-    color: var(--colorRojoToc);
+    color: $colorRojoToc;
     transition: 1s;
 }
 .icon-martillo:hover{
-    color: var(--colorRojoToc);
+    color: $colorRojoToc;
     transition: 1s;
 }
 /*Presupuesto*/
@@ -124,20 +96,20 @@
     border: 0px;
     border-radius: 40px;
     font-size: 30px;
-    background-color: var(--colorRojoToc);
+    background-color: $colorRojoToc;
     color: var(--colorFondo);
 }
 .btnProyecto:hover{
     background-color: #ba2932; 
 }
 .btnProyecto:active{
-    color: var(--colorRojoToc);
-    background-color: var(--colorFondo);
-    border: 2px solid var(--colorRojoToc);
+    color: $colorRojoToc;
+    background-color: $colorFondo;
+    border: 2px solid $colorRojoToc;
 }
 
 #textoBtn:hover{
-    color: var(--colorFondo);
+    color: $colorFondo;
 }
 
 
@@ -145,7 +117,7 @@
 /*Referencias*/
 .referenciasContent{
     padding: 5% 15%;
-    background-color: var(--colorAzulToc);
+    background-color: $colorAzulToc;
     display: flex;
     justify-content: space-between;
     justify-content: center;    
@@ -192,7 +164,7 @@
     font-size: 20px;
 }
 .btnIngresar{
-    color: var(--colorRojoToc);
+    color: $colorRojoToc;
 }
 
 /*Contactos*/
@@ -215,4 +187,34 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+header{
+    background-color: #3c3c3c;
+}
+/*footer*/
+.footerContent {
+	display: flex;
+	justify-content: space-around;
+	background-color: $colorNegroToc;
+	padding: 10px;
+	border: 0px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+        .icon-facebook {
+        font-size: 30px;
+        color: $colorFondo;
+        }
+            .icon-instagram {
+                font-size: 30px;
+                color: $colorFondo;
+            }
+                .icon-correo {
+                    font-size: 30px;
+                    color: $colorFondo;
+                }
+                    .icon-whatsapp {
+                        font-size: 30px;
+                        color: $colorFondo;
+                    }
 }
