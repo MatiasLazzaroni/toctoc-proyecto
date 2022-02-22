@@ -1,196 +1,315 @@
 
 
-.gridUsuarioContacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column: 1/4;    
-}
-.usuarioContent {
-    grid-column:1/2 ;
-    margin-bottom: 80px;
-}
-.inputUsuarioContent{
-    grid-column: 2/4;
-    margin-bottom: 80px;
-}
 #fondoNosotros{
     background-color: $colorFondo;
 }
 .imagenToc{
     width: 100%;
+    @media screen and (max-width: 1050px){
+        width: 100%;   
+    }
 }
 /*Informacion*/
 .seccionesInfo{
     padding: 20px;
-}
-.textoIntro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(145, 145, 145);
-    padding: 40px;
-    font-size: 30px;
-}
-.infoContent{
-    display: flex;
-    justify-content: space-evenly;
-    
-    margin: 10px;
-}
-.infoContent div h3{
-    margin-bottom: 10px;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 60px;
-}
-.info h3{
-    margin-top: 40px;
-}
-.info p{
-    text-align: center;
-    color: rgb(145, 145, 145);
-}
-.icon-home, .icon-asesoramiento, .icon-martillo{
-    font-size: 80px;
-    color: rgb(145, 145, 145);
-}
-.icon-home{
-    &:hover{
-    color: $colorRojoToc;
-    transition: 1s;
+    @media screen and (max-width: 1050px){
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
     }
-}
-.icon-asesoramiento:hover{
-    color: $colorRojoToc;
-    transition: 1s;
-}
-.icon-martillo:hover{
-    color: $colorRojoToc;
-    transition: 1s;
+        .textoIntro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(145, 145, 145);
+            padding: 40px;
+            font-size: 30px;
+            @media screen and (max-width: 1050px){
+                margin: 20px;
+                padding: 0px;
+                font-size: 20px;   
+            }
+        }
+        .infoContent{
+        display: flex;
+        justify-content: space-evenly;                
+        margin: 10px;
+        @media screen and (max-width: 1050px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+        }            
+               .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                padding: 60px;
+                @media screen and (max-width: 1050px){
+                    padding: 10px;
+                }
+                        h3{
+                        margin-top: 40px;
+                        @media screen and (max-width: 1050px){
+                            margin-top: 10px;
+                            font-size: 20px;
+                        }
+                        }
+                                p{
+                                    text-align: center;
+                                    color: rgb(145, 145, 145);
+                                    @media screen and (max-width: 1050px){
+                                        text-align: center;
+                                        color: rgb(145, 145, 145);
+                                        font-size: 15px;    
+                                    }
+                                }
+                                    .icon-home{
+                                    font-size: 80px;
+                                    color: rgb(145, 145, 145);
+                                    @media screen and (max-width: 1050px){
+                                        margin-bottom: 0px;
+                                        font-size: 60px; 
+                                    }
+                                    }
+                                        .icon-asesoramiento{
+                                        font-size: 80px;
+                                        color: rgb(145, 145, 145);
+                                        @media screen and (max-width: 1050px){
+                                            margin-bottom: 0px;
+                                            font-size: 60px; 
+                                        }    
+                                        }
+                                            .icon-martillo{
+                                                font-size: 80px;
+                                                color: rgb(145, 145, 145);
+                                                @media screen and (max-width: 1050px){
+                                                    margin-bottom: 0px;
+                                                    font-size: 60px; 
+                                                }
+                                            }
+                                                .icon-home{
+                                                    &:hover{
+                                                    color: $colorRojoToc;
+                                                    transition: 1s;
+                                                    }
+                                                }
+                                                    .icon-asesoramiento{
+                                                        &:hover{
+                                                        color: $colorRojoToc;
+                                                        transition: 1s;
+                                                        }
+                                                    }
+                                                        .icon-martillo{
+                                                            &:hover{
+                                                            color: $colorRojoToc;
+                                                            transition: 1s;
+                                                            }
+                                                        }
+            }
+        }
 }
 /*Presupuesto*/
 .presupuestoContent{
     padding: 5% ;
     display: flex;
     justify-content: space-around;
-}
-#textoPresup{
-    font-size: 40px;
-    
-}
-#textoPresup2{
-    font-size: 25px;
+    @media screen and (max-width: 1050px){
+        padding: 5% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    }
+        .textoContenido{
+            @media screen and (max-width: 1050px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;    
+            }
+            #textoPresup{
+            font-size: 40px;
+            @media screen and (max-width: 1050px){
+                font-size: 30px;
+            }
+            }
+                #textoPresup2{
+                font-size: 25px;
+                @media screen and (max-width: 1050px){
+                    font-size: 17px;
+                    text-align: center;  
+                }
+                }
+        }
+        div{
+            .btnProyecto{
+                width: 400px;
+                height: 80px;
+                border: 0px;
+                border-radius: 40px;
+                font-size: 30px;
+                background-color: $colorRojoToc;
+                color: var(--colorFondo);
+                @media screen and (max-width: 1050px){
+                    width: 150px;
+                    height: 70px;
+                    font-size: 18px;
+                    margin-top: 10px;  
+                }
+                &:hover{
+                background-color: #ba2932; 
+                }
+                &:active{
+                color: $colorRojoToc;
+                background-color: $colorFondo;
+                border: 2px solid $colorRojoToc;
+                }
+                #textoBtn{
+                    &:hover{
+                    color: $colorFondo;
+                    }
+                }    
+
+            }
+        }
 
 }
-
-.btnProyecto{
-    width: 400px;
-    height: 80px;
-    border: 0px;
-    border-radius: 40px;
-    font-size: 30px;
-    background-color: $colorRojoToc;
-    color: var(--colorFondo);
-}
-.btnProyecto:hover{
-    background-color: #ba2932; 
-}
-.btnProyecto:active{
-    color: $colorRojoToc;
-    background-color: $colorFondo;
-    border: 2px solid $colorRojoToc;
-}
-
-#textoBtn:hover{
-    color: $colorFondo;
-}
-
-
-
 /*Referencias*/
 .referenciasContent{
     padding: 5% 15%;
     background-color: $colorAzulToc;
     display: flex;
     justify-content: space-between;
-    justify-content: center;    
+    justify-content: center;
+        .referencias{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                .textoRef{
+                font-size: 30px;
+                color: white;
+                @media screen and (max-width: 1050px){
+                    font-size: 20px;
+                    align-items: center;
+                }
+                }
+        }    
 }
-.referencias{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.referencias img{
-    margin: 0 10px;
-}
-.textoRef{
-    font-size: 30px;
-    color: white;
-}
+
 /*Usuario*/
 .usuarioContent{
     padding: 5% 15%;
     display: flex;
-    justify-content: space-between;   
-}
-.inputUsuarioContent{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.inputUsuario{
-    margin: 7px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    outline: none;
-    padding: 10px;   
-}
-.textUsuarioA{
-   width: 70%;
-   font-size: 30px;
-   margin-bottom: 2%;
-   
-}
-.textUsuarioB{
-    width: 70%;
-    font-size: 20px;
-}
-.btnIngresar{
-    color: $colorRojoToc;
+    justify-content: space-between;
+    @media screen and (max-width: 1050px){
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;   
+    }
+        .textUsuarioA{
+        width: 70%;
+        font-size: 30px;
+        margin-bottom: 2%; 
+        @media screen and (max-width: 1050px){
+            text-align: center;
+            margin: 15px;
+            margin-left: 50px;
+            padding: 0;    
+        }  
+        }
+        .textUsuarioB{
+            width: 70%;
+            font-size: 20px;
+            @media screen and (max-width: 1050px){
+                text-align: center;
+                margin: 15px;
+                margin-left: 50px;
+                padding: 0;    
+            } 
+        }
+        .inputUsuarioContent{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (max-width: 1050px){
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+            .inputUsuario{
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+            padding: 10px;   
+            }
+
+            .btnIngresar{
+            color: $colorRojoToc;
+            }
+        }   
 }
 
-/*Contactos*/
-.contactoContenedor{
-    padding: 3%;
-    margin-bottom: 20px;
-    background-color: #3c3c3c;
-    color: white;
-    display: flex;
-    justify-content: space-around;
+.gridUsuarioContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column: 1/4;
+    @media screen and (max-width: 1050px){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    }
+        .usuarioContent {
+        grid-column:1/2 ;
+        margin-bottom: 80px;
+        }
+            .inputUsuarioContent{
+            grid-column: 2/4;
+            margin-bottom: 80px;
+            }
+            /*Contactos*/
+            .contactoContenedor{
+            padding: 3%;
+            margin-bottom: 20px;
+            background-color: #3c3c3c;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 1050px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 50px;
+            }
+                .tituloContacto{
+                margin-bottom: 3%;
+                }
+                .textoContacto{
+                    font-size: 15px;
+                }
+                .mapa{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                @media screen and (max-width: 1050px){
+                    margin-top: 20px;
+                }
+                }
+            }
 }
-.tituloContacto{
-    margin-bottom: 3%;
-}
-.textoContacto{
-    font-size: 15px;
-}
-.mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-header{
-    background-color: #3c3c3c;
-}
+
 /*footer*/
 .footerContent {
 	display: flex;

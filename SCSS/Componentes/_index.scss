@@ -8,40 +8,42 @@
 	display: grid;
 	grid-template-rows: 400px 200px 300px;
 	grid-template-columns: 1fr;
-}
-.logoContent {
+	.logoContent {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 5%;
-}
-section{
-    .btnContenedor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    }
-        .botonBienvenido {
-        padding: 10px;
-        border: 0px;
-        border-radius: 20px;
-        font-size: 30px;
-        background-color: $colorRojoToc;
-        }
+	}
+	section{
+		.btnContenedor {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+			.botonBienvenido {
+			padding: 10px;
+			border: 0px;
+			border-radius: 20px;
+			font-size: 30px;
+			background-color: $colorRojoToc;
+			}
             
+	}
+
+	.redesContent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+			.texto1 {
+				color: white;
+				font-size: 20px;
+			}
+			.logosRedes {
+			height: 50px;
+			margin: 20px;
+			}
+	}
 }
 
-.redesContent {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-        .texto1 {
-            color: white;
-            font-size: 20px;
-        }
-}
-.logosRedes {
-	height: 50px;
-	margin: 20px;
-}
+
 
