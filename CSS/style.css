@@ -719,3 +719,357 @@ a {
   font-size: 30px;
   color: whitesmoke;
 }
+
+.gridContenedorProyecto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.gridContenedorProyecto .navbar {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .tituloEstilos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .seleccionEstilos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .seccionEstilos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .titulo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .agendaContent {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .final {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.gridContenedorProyecto .footerContent {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.tituloEstilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  .tituloEstilos {
+    text-align: center;
+  }
+}
+
+.seleccionEstilos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background-color: #f7333f;
+  padding: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  .seleccionEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.seleccionEstilos .estilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.seleccionEstilos .btnEstilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: #31475e;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1050px) {
+  .seleccionEstilos .btnEstilos {
+    margin-bottom: 30px;
+  }
+}
+
+.seleccionEstilos .imgEstilos {
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .seleccionEstilos .imgEstilos {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.seleccionEstilos .textoEstilos {
+  margin-bottom: 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+button {
+  background-color: #f7333f;
+  border: 0px;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.seccionEstilos {
+  background-color: #f7333f;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionEstilos .formularioEstilo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  color: whitesmoke;
+  background-color: #31475e;
+  margin: 0;
+  width: 300px;
+  padding: 30px 25px;
+}
+
+.seccionEstilos .formularioEstilo .inputForm {
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  width: 250px;
+  margin: 10px;
+}
+
+.seccionEstilos .formularioEstilo li {
+  list-style: none;
+}
+
+.seccionEstilos .formularioEstilo ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 1050px) {
+  .seccionEstilos .formularioEstilo ul {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+}
+
+.seccionEstilos .formularioEstilo .btnForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7333f;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+.seccionEstilos .formularioEstilo .textForm {
+  margin-left: 10px;
+}
+
+/*reunion*/
+.agendaContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f7333f;
+  padding: 30px;
+}
+
+.agendaContent #calendario {
+  padding: 20px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.agendaContent .btnEstilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: #31475e;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/*espere a ser llamado*/
+.final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f7333f;
+  padding: 30px;
+  margin-bottom: 54px;
+}
+
+.final .btnEstilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: #31475e;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}

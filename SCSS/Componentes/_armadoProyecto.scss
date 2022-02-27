@@ -1,0 +1,205 @@
+.gridContenedorProyecto {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto auto auto;
+	.navbar {
+		grid-column: 1/4;
+	}
+	.tituloEstilos {
+		grid-column: 1/4;
+	}
+	.seleccionEstilos {
+		grid-column: 1/4;
+	}
+	.seccionEstilos {
+		grid-column: 1/4;
+	}
+	.titulo {
+		grid-column: 1/4;
+	}
+	.agendaContent {
+		grid-column: 1/4;
+	}
+	.final {
+		grid-column: 1/4;
+	}
+	.footerContent {
+		grid-column: 1/4;
+	}
+	
+}
+.tituloEstilos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+	@media screen and (max-width: 1050px){
+		text-align: center;
+	}
+    
+}
+.seleccionEstilos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $colorRojoToc;
+    padding: 30px;
+	@media screen and (max-width: 1050px){
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+	}
+		.estilos{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 10px;
+			
+		}
+		.btnEstilos {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 30px;
+			border: 0px;
+			border-radius: 40px;
+			background-color: $colorAzulToc;
+			font-size: 15px;
+			padding: 10px;
+			margin-top: 15px;
+			@media screen and (max-width: 1050px){
+				margin-bottom: 30px;
+			}
+		}
+		.imgEstilos {
+			border-radius: 30px;
+			margin-bottom: 20px;
+			@media screen and (max-width: 1050px){
+				height: 300px;
+        		width: 300px;
+			}
+		}
+		.textoEstilos {
+			margin-bottom: 20px;
+			color: $colorFondo;
+			text-align: center;
+		}
+		
+
+}
+button {
+	background-color: $colorRojoToc;
+	border: 0px;
+}
+//formulario//
+.titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	
+}
+.seccionEstilos{
+    background-color: $colorRojoToc;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+		.formularioEstilo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		color: $colorFondo;
+		background-color: $colorAzulToc;
+		margin: 0;
+		width: 300px;
+		padding: 30px 25px;
+			.inputForm{
+			border-radius: 10px;
+			padding: 10px;
+			outline: none;
+			border: 0;
+			width: 250px;
+			margin: 10px;
+			}
+			li{
+				list-style: none;
+			}
+			ul{
+				padding-inline-start: 0px;
+				@media screen and (max-width: 1050px){
+					padding-inline-start: 0px;	
+				}
+			}
+			.btnForm{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $colorRojoToc;
+				font-size: 15px;
+				border-radius: 10px;
+				padding: 10px;
+				margin-top: 10px;
+				color: $colorFondo;
+			}
+			.textForm{
+				margin-left: 10px;
+			}
+		}
+}
+
+/*reunion*/
+.agendaContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $colorRojoToc;
+    padding: 30px;
+		#calendario{
+		padding: 20px;
+		border-radius: 5px;
+		border: 0px;
+		}
+		.btnEstilos {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 30px;
+			border: 0px;
+			border-radius: 40px;
+			background-color: $colorAzulToc;
+			font-size: 15px;
+			padding: 10px;
+			margin-top: 15px;
+		}
+}
+/*espere a ser llamado*/
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $colorRojoToc;
+    padding: 30px;
+    margin-bottom: 54px;
+	.btnEstilos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 30px;
+		border: 0px;
+		border-radius: 40px;
+		background-color: $colorAzulToc;
+		font-size: 15px;
+		padding: 10px;
+		margin-top: 15px;
+	}
+}
