@@ -99,8 +99,8 @@ a {
 .gridIndexContenedor {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 400px 200px 300px;
-      grid-template-rows: 400px 200px 300px;
+  -ms-grid-rows: 400px 200px 100px;
+      grid-template-rows: 400px 200px 100px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
@@ -159,7 +159,7 @@ a {
 
 .gridIndexContenedor .redesContent .logosRedes {
   height: 50px;
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 #fondoNosotros {
