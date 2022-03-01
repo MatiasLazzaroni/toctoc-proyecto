@@ -1,3 +1,24 @@
 .fondoColorUsuario{
     background-color: $colorAzulToc;
 }
+
+.contenedorDeEstados{
+    margin: 50px 0px;
+        .cuadroContent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                .cuadroEstado{
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    border: 2px solid $colorFondo;
+                    border-radius: 10px;
+                    color: $colorFondo;
+                    padding: 10px;
+                    margin: 15px;
+                       
+                }
+        }
+}
