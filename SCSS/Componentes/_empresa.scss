@@ -1,0 +1,54 @@
+.contenedorDatos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: $colorRojoToc;
+    text-align: center;    
+    color: $colorFondo;
+    margin-top: 50px;
+    @media screen and (max-width: 1275px){
+        display: flex;
+        flex-direction: column;
+    }
+        .seccionDatos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            
+            h2{
+                font-size: 100px;
+            }
+            input{
+                padding: 20px;
+                border-radius: 10px;
+                border: 0px;
+                margin: 10px;
+            }
+        }
+}
+
+h1 {
+    color: $colorFondo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnDatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    @media screen and (max-width: 1275px){
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+        button{
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: $colorFondo;
+        }
+    
+}

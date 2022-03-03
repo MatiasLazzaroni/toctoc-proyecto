@@ -1,0 +1,43 @@
+.fondoColorCuenta{
+    background-color: $colorAzulToc;
+}
+.contenedorCuenta2{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logoCuenta{
+        margin-bottom: 10px;
+    }
+} 
+
+.inputsCuenta{
+    display: flex;
+    flex-direction: column;
+    .input1{
+        border: 0;
+        border-radius: 10px;
+        padding: 4px;
+        margin: 8px;
+        outline: none;
+    }
+    h5{
+        display: flex;
+        justify-content: center;
+        color: $colorFondo;
+        font-size: 15px;
+    }
+    .btnCuenta{    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorRojoToc;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;    
+    }
+}
+
+
