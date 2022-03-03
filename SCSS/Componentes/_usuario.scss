@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 .fondoColorUsuario{
     background-color: $colorAzulToc;
 }
@@ -14,7 +16,7 @@
                     display: grid;
                     grid-template-columns: repeat(4,1fr);                   
                     background-color: $colorRojoToc;
-                    border-radius: 10px;
+                    @include borderRadius (10px);
                     color: $colorFondo;
                     
                     margin: 15px;

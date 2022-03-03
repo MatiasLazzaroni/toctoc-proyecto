@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 .contenedorDatos{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -10,9 +12,7 @@
         flex-direction: column;
     }
         .seccionDatos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %displayCenter;
             flex-direction: column;
             padding: 10px;
             
@@ -21,7 +21,7 @@
             }
             input{
                 padding: 20px;
-                border-radius: 10px;
+                @include borderRadius (10px);
                 border: 0px;
                 margin: 10px;
             }
@@ -30,16 +30,12 @@
 
 h1 {
     color: $colorFondo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayCenter;
     margin-top: 10px;
 }
 
 .btnDatos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %displayCenter;
     margin-top: 25px;
     @media screen and (max-width: 1275px){
         margin-bottom: 120px;

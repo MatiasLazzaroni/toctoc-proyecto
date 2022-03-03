@@ -882,9 +882,6 @@ button {
 
 .contenedorCuenta2 {
   margin-top: 8%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -913,9 +910,6 @@ button {
 }
 
 .inputsCuenta .btnCuenta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f7333f;
   font-size: 15px;
   border-radius: 10px;
@@ -940,9 +934,6 @@ button {
 }
 
 .contenedorDatos .seccionDatos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 10px;
 }
@@ -960,16 +951,10 @@ button {
 
 h1 {
   color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
 .btnDatos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 25px;
 }
 
@@ -984,4 +969,10 @@ h1 {
   padding: 10px 15px;
   border-radius: 5px;
   color: whitesmoke;
+}
+
+.contenedorCuenta2, .inputsCuenta .btnCuenta, .contenedorDatos .seccionDatos, h1, .btnDatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
