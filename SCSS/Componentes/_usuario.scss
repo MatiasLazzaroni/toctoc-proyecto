@@ -11,14 +11,65 @@
             flex-direction: column;
                 .cuadroEstado{
                     width: 60%;
-                    display: flex;
-                    justify-content: space-evenly;
-                    border: 2px solid $colorFondo;
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);                   
+                    background-color: $colorRojoToc;
                     border-radius: 10px;
                     color: $colorFondo;
-                    padding: 10px;
+                    
                     margin: 15px;
-                       
+                    text-align: center;
+                    @media screen and (max-width: 965px){
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(3,1fr);                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        background-color: #e0e0e0;
+                        color: $colorNegroToc
+                    }
+                   
+                    p{
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                        
+                        @media screen and (max-width: 965px){
+                            font-size: 25px;
+                            color: $colorFondo;
+                        }
+                    }
+                    h3{
+                        font-size: 30px;
+                        @media screen and (max-width: 965px){
+                            font-size: 20px;
+                            color: $colorFondo;
+                        }
+                    }
+                    .colorFondo{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding: 10px;
+                        @media screen and (max-width: 965px){
+                            background-color: $colorRojoToc;
+                            width: 100%;
+                        }
+                    }
+                   .fondoImg{
+                    @media screen and (max-width: 965px){
+                        background-color: white;
+                        width: 100%;}
+                   }
+                   img{
+                       background-color: white;
+                       width: 100%;
+                   }
+                    
                 }
         }
+        
 }
