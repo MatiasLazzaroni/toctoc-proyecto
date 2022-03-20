@@ -9,36 +9,83 @@
         width: 100%;   
     }
 }
-/*navbar
-.navbar{
-    width: 100%;
+/*menu TocToc*/
+.navbarToc {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--colorContacto);
+    justify-content:center;
     align-items: center;
-}
-.logoToc{
-    margin: 5px;
-}
-nav ul {
+    padding: 0px;
+    margin: 0px;
+    @media screen and (max-width: 1050px){
     display: flex;
-    flex-direction: row;    
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    }
+    .menuHamburguesa{
+        display: none;        
+        .linea1{
+            width: 50px;
+            height: 10px;
+            background-color: $colorNegroToc;
+            margin: 3px 0px;
+        }
+        .linea2{
+            width: 50px;
+            height: 10px;
+            background-color: $colorNegroToc;
+            margin: 3px 0px;
+        }
+        .linea3{
+            width: 50px;
+            height: 10px;
+            background-color: $colorNegroToc;
+            margin: 3px 0px;
+        }
+        @media screen and (max-width: 1050px){
+        display: block;
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin: 10px;
+    
+        .imgMenu{
+            
+        }
+        .listaNav{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+            li {         
+                @media screen and (max-width: 1050px){
+                    display: none;
+                }       
+                .itemMenu{
+                color: $colorNegroToc;
+                text-decoration: none;
+                padding: 20px;  
+                    &:hover{
+                    background-color: $colorRojoToc;
+                    width: 100%;
+                    transition: 1s;
+                    color: $colorFondo;
+                    }
+                }    
+            }
+        }
+        
+        
+        
+    }
 }
 
-nav ul li {    
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: $colorNegroToc
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: var(--colorRojoToc);
-    transition: 1s;
-}
-*/
 /*Informacion*/
 .seccionesInfo{
     padding: 20px;
