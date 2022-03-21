@@ -9,82 +9,6 @@
         width: 100%;   
     }
 }
-/*menu TocToc*/
-.navbarToc {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    @media screen and (max-width: 1050px){
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    }
-    .menuHamburguesa{
-        display: none;        
-        .linea1{
-            width: 50px;
-            height: 10px;
-            background-color: $colorNegroToc;
-            margin: 3px 0px;
-        }
-        .linea2{
-            width: 50px;
-            height: 10px;
-            background-color: $colorNegroToc;
-            margin: 3px 0px;
-        }
-        .linea3{
-            width: 50px;
-            height: 10px;
-            background-color: $colorNegroToc;
-            margin: 3px 0px;
-        }
-        @media screen and (max-width: 1050px){
-        display: block;
-        display: flex;
-        flex-direction: column;
-        }
-    }
-    ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin: 10px;
-    
-        .imgMenu{
-            
-        }
-        .listaNav{
-        display: flex;        
-        justify-content: center;
-        align-items: center;
-            li {         
-                @media screen and (max-width: 1050px){
-                    display: none;
-                }       
-                .itemMenu{
-                color: $colorNegroToc;
-                text-decoration: none;
-                padding: 20px;  
-                    &:hover{
-                    background-color: $colorRojoToc;
-                    width: 100%;
-                    transition: 1s;
-                    color: $colorFondo;
-                    }
-                }    
-            }
-        }
-        
-        
-        
-    }
-}
 
 /*Informacion*/
 .seccionesInfo{
@@ -373,7 +297,7 @@
                 margin-bottom: 3%;
                 }
                 .textoContacto{
-                    font-size: 15px;
+                font-size: 15px;
                 }
                 .mapa{
                 display: flex;
