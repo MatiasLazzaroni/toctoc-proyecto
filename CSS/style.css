@@ -552,12 +552,12 @@ nav .icono {
 }
 
 .gridUsuarioContacto .contactoContenedor {
-  padding: 3%;
+  padding: 45px;
   margin-bottom: 20px;
   background-color: #3c3c3c;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1050px) {
@@ -582,7 +582,7 @@ nav .icono {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 1050px) {
