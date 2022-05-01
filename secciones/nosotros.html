@@ -22,7 +22,7 @@
 <body id="fondoNosotros">
     <div class="gridContenedorNosotros">
        
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">            
+    <!--<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">            
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="logoToc" src="../img/toctocNav.png" alt="logo Toctoc"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +50,33 @@
                 </div>
             </div>
           
-        </nav>
+        </nav>-->
       
-        
+        <nav>
+            <ul>
+                <div class="icono">
+                    <img src="../img/iconMenu.png" alt="">
+                    <a href="/secciones/nosotros.html"><img src="../img/toctocNav.png" alt="" class="imgToc"></a>
+                </div>
+                
+                <div class="lista">
+                    <a href="/secciones/nosotros.html"><img src="../img/toctocNav.png" alt="" class="imgToc1"></a>
+                    <li><a href="#seccionTrabajos">Nosotros</a></li>
+                    <li><a href="#seccionReferencias">Referencias</a></li>
+                    <li><a href="#seccionUsuarios">Usuario</a></li>
+                    <li><a href="#seccionContacto">Contacto</a></li>
+                    <li><a href="ingresoCuenta.html">Empresa</a></li>
+                </div>
+                
+            </ul>
+            
+        </nav>
   
         <div class="contenedorImagen" >          
             <img src="../img/headerFondo.jpg" class="img-fluid" alt="imagen portada">       
         </div>
 
-        <section class="seccionesInfo">
+        <section class="seccionesInfo"id="seccionTrabajos">
             <div class="textoIntro">
                 <p>Estamos presentes desde el inicio del proceso, estudiando las necesidades del cliente, elección de la madera, elaboración del producto y su instalación en obra. Ofrecemos un amplio asesoramiento y trabajamos en conjunto con estudios de arquitectura e ingeniería para realizar todo tipo de proyectos en madera.</p>
             </div>
@@ -81,7 +99,7 @@
             </article>        
         </section>
         <!-- Carrusel de Bootrstrap -->
-        <section id="seccionTrabajos">
+        <section >
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -168,7 +186,7 @@
                     <h4 class="textoContacto">Sabados y Domingos cerrados</h4>
                 </div>
                 <div class="mapas">
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9424445833847!2d-62.26133508465486!3d-38.719130379598525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34c5cf1e515%3A0x8f94470a1dd89eef!2sLavalle%20222%2C%20B8000INF%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1642474604524!5m2!1ses!2sar" width="300" height="275" style="border:0;" allowfullscreen="" loading="lazy">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9424445833847!2d-62.26133508465486!3d-38.719130379598525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34c5cf1e515%3A0x8f94470a1dd89eef!2sLavalle%20222%2C%20B8000INF%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1642474604524!5m2!1ses!2sar" width="400" height="275" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </section>
@@ -180,7 +198,8 @@
                 <span class="icon-correo"></span>
         </footer>
     </div>
-    
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

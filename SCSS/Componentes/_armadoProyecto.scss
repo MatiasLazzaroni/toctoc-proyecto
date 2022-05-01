@@ -1,4 +1,4 @@
-.gridContenedorProyecto {
+/*.gridContenedorProyecto {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: auto auto auto;
@@ -27,7 +27,7 @@
 		grid-column: 1/4;
 	}
 	
-}
+}*/
 .tituloEstilos{
     display: flex;
     justify-content: center;
@@ -43,6 +43,7 @@
     grid-template-columns: repeat(3, 1fr);
     background-color: $colorRojoToc;
     padding: 30px;
+	border-radius: 20px;
 	@media screen and (max-width: 1050px){
 		display: flex;
         flex-direction: column;
@@ -94,20 +95,22 @@ button {
 	border: 0px;
 }
 //formulario//
-.titulo{
+#seccionFormulario{	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 40px;
+	display: none;
 	
 }
-.seccionEstilos{
-    background-color: $colorRojoToc;
-    padding: 30px;
+.seccionFormulario{    
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+	background-color: $colorRojoToc;
+    padding: 30px;
+	border-radius: 20px;
+	display: none;
 		.formularioEstilo{
 		display: flex;
 		justify-content: center;
@@ -154,6 +157,15 @@ button {
 }
 
 /*reunion*/
+#seccionAgenda{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	display: none;
+	
+}
 .agendaContent{
     display: flex;
     justify-content: center;
@@ -161,6 +173,7 @@ button {
     flex-direction: column;
     background-color: $colorRojoToc;
     padding: 30px;
+	display: none;
 		#calendario{
 		padding: 20px;
 		border-radius: 5px;
@@ -181,6 +194,15 @@ button {
 		}
 }
 /*espere a ser llamado*/
+#seccionFinal{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	display: none;
+	
+}
 .final{
     display: flex;
     justify-content: center;
@@ -189,6 +211,7 @@ button {
     background-color: $colorRojoToc;
     padding: 30px;
     margin-bottom: 54px;
+	display: none;
 	.btnEstilos {
 		display: flex;
 		justify-content: center;

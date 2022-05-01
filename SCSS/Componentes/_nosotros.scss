@@ -9,6 +9,67 @@
         width: 100%;   
     }
 }
+/*navbar*/
+nav{
+    background-color: $colorFondo;
+    width: 100%;
+    ul{
+        margin: 0px;
+        padding: 10px;
+        @media screen and (max-width: 1050px){
+            margin: 0px;
+            padding: 0px;
+        }
+        .imgToc1{
+        @media screen and (max-width: 1050px){
+        display: none;
+        
+        }
+        }
+        .lista{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 1050px){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #3c3c3c;
+                display: none;
+                
+            }  
+            li{
+            list-style: none;
+            padding: 10px;
+            &:hover{
+               background-color: $colorRojoToc;
+               color: $colorFondo;
+            }
+            @media screen and (max-width: 1050px){
+                border-top:1px solid #ccc;
+                width: 100%;
+            }
+            
+                a{
+                color: $colorNegroToc;
+                
+                @media screen and (max-width: 1050px){
+                    color: $colorFondo;
+                }
+                }    
+            }
+            
+        }
+    }
+    .icono{
+    display: none;
+    @media screen and (max-width: 1050px){
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+    }
+}
 
 /*Informacion*/
 .seccionesInfo{
@@ -262,13 +323,13 @@
 
 .gridUsuarioContacto{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column: 1/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column: 1/2;
     @media screen and (max-width: 1050px){
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     }
         .usuarioContent {
         grid-column:1/2 ;
@@ -291,7 +352,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: 50px;
+                padding: 30px;
             }
                 .tituloContacto{
                 margin-bottom: 3%;
@@ -305,7 +366,8 @@
                 align-items: center;
                 border-radius: 10px;
                 @media screen and (max-width: 1050px){
-                    margin-top: 20px;
+                    margin: 15px;
+
                 }
                 }
             }

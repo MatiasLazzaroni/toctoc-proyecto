@@ -18,8 +18,25 @@
     <link rel="icon" href="../img/imgTrabajos/icon.png">
 </head>
 <body>
+      <nav>
+          <ul>
+              <div class="icono">
+                  <img src="../img/iconMenu.png" alt="">
+                  <a href="nosotros.html"><img src="../img/toctocNav.png" alt="" class="imgToc"></a>
+              </div>
+              
+              <div class="lista">
+                <a href="/secciones/nosotros.html"><img src="../img/toctocNav.png" alt="" class="imgToc1"></a>
+                  <li><a href="nosotros.html#seccionTrabajos">Nosotros</a></li>
+                  <li><a href="nosotros.html#seccionReferencias">Referencias</a></li>
+                  <li><a href="nosotros.html#seccionUsuarios">Usuario</a></li>
+                  <li><a href="nosotros.html#seccionContacto">Contacto</a></li>
+                  <li><a href="ingresoCuenta.html">Empresa</a></li>
+              </div>
+            </ul>
+      </nav>
     <div class="gridContenedorProyecto">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <!--<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img class="logoToc" src="../img/toctocNav.png" alt="logo Toctoc"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +63,8 @@
                 </ul>
               </div>
             </div>
-        </nav>
+        </nav>-->
+        
   
         <h2 class="tituloEstilos">SELECCIONA EL ESTILO DE TU PROYECTO</h2>
     
@@ -54,25 +72,25 @@
             <div class="estilos">
                 <img class="imgEstilos" src="../img/estiloNordico.jpg" alt="mueble nordico">
                 <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
-                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+                <button class="btnEstilos">Seleccionar</button>
             </div>
 
             <div class="estilos">
                 <img class="imgEstilos" src="../img/estiloIndustrial.jpg" alt="mueble industrial">
                 <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
-                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+                <button class="btnEstilos">Seleccionar</button>
             </div>
             
             <div class="estilos">
                 <img class="imgEstilos" src="../img/muebleMelamina.jpg" alt="mueble melamina">
                 <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
-                <button class="btnEstilos"><a  href="#seccionFormulario">Seleccionar</a></button>
+                <button class="btnEstilos">Seleccionar</button>
             </div>
         </section>
 
         <h2 id="seccionFormulario"class="titulo">COMPLETAR FORMULARIO</h2>
 
-        <section  class="seccionEstilos">        
+        <section  class="seccionFormulario">        
             <!-- Agrego un modelo de formulario que copie de developer -->
             <form class="formularioEstilo" action="" method="post">
                 <ul>
@@ -118,6 +136,8 @@
             <span class="icon-correo"></span>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    
 </body>
 </html>
