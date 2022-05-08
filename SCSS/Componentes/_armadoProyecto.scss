@@ -44,6 +44,7 @@
     background-color: $colorRojoToc;
     padding: 30px;
 	border-radius: 20px;
+	margin: 0px 50px;
 	@media screen and (max-width: 1050px){
 		display: flex;
         flex-direction: column;
@@ -68,8 +69,9 @@
 			border-radius: 40px;
 			background-color: $colorAzulToc;
 			font-size: 15px;
-			padding: 10px;
+			padding: 20px;
 			margin-top: 15px;
+			color: $colorFondo;
 			@media screen and (max-width: 1050px){
 				margin-bottom: 30px;
 			}
@@ -96,21 +98,21 @@ button {
 }
 //formulario//
 #seccionFormulario{	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding: 40px;
-	display: none;
+	@media screen and (max-width: 1050px){
+		text-align: center;
+	}
 	
 }
 .seccionFormulario{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: $colorRojoToc;
     padding: 30px;
+	margin: 0px 50px 100px 50px;
 	border-radius: 20px;
-	display: none;
 		.formularioEstilo{
 		display: flex;
 		justify-content: center;
@@ -153,27 +155,40 @@ button {
 			.textForm{
 				margin-left: 10px;
 			}
+			#descripcion{
+				width: 250px;
+				height: 250px;
+			}
+			.textoDescripcion{
+				text-align:left;
+				margin: 0px 0px 0px 10px;
+				font-size: 11px;
+			}
+			#calendario{
+				padding: 20px;
+				border-radius: 5px;
+				border: 0px;
+				margin: 10px 10px 10px;
+				}
 		}
 }
 
 /*reunion*/
 #seccionAgenda{
 	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding: 40px;
-	display: none;
 	
 }
 .agendaContent{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: $colorRojoToc;
     padding: 30px;
-	display: none;
+	margin: 0px 50px;
+	border-radius: 20px;
+	flex-direction: column;
 		#calendario{
 		padding: 20px;
 		border-radius: 5px;
@@ -196,22 +211,21 @@ button {
 /*espere a ser llamado*/
 #seccionFinal{
 	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding: 40px;
-	display: none;
+	
 	
 }
 .final{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: $colorRojoToc;
     padding: 30px;
-    margin-bottom: 54px;
-	display: none;
+	margin: 0px 50px;
+	border-radius: 20px;
+	flex-direction: column;
+	
 	.btnEstilos {
 		display: flex;
 		justify-content: center;

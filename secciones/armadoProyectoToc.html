@@ -71,19 +71,19 @@
         <section class="seleccionEstilos">       
             <div class="estilos">
                 <img class="imgEstilos" src="../img/estiloNordico.jpg" alt="mueble nordico">
-                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <p class="textoEstilos">ESTILO NORDICO</p>
                 <button class="btnEstilos">Seleccionar</button>
             </div>
 
             <div class="estilos">
                 <img class="imgEstilos" src="../img/estiloIndustrial.jpg" alt="mueble industrial">
-                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <p class="textoEstilos">ESTILO INDUSTRIAL</p>
                 <button class="btnEstilos">Seleccionar</button>
             </div>
             
             <div class="estilos">
                 <img class="imgEstilos" src="../img/muebleMelamina.jpg" alt="mueble melamina">
-                <p class="textoEstilos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, debitis.</p>
+                <p class="textoEstilos">MUEBLES MELAMINA</p>
                 <button class="btnEstilos">Seleccionar</button>
             </div>
         </section>
@@ -92,41 +92,41 @@
 
         <section  class="seccionFormulario">        
             <!-- Agrego un modelo de formulario que copie de developer -->
-            <form class="formularioEstilo" action="" method="post">
+            <form class="formularioEstilo" action="enviar.php" method="post">
                 <ul>
                     <li>
-                        <label class="textForm" for="color">Color:</label>
-                        <input class="inputForm" type="text" id="color" name="user_name">
-                    </li>   
-                    <li>
-                        <label class="textForm" for="medidas">Medidas:</label>
-                        <input class="inputForm" type="text" id="medidas" name="user_name">
+                        <label class="textForm" for="nombre y apellido">Apellido y nombre (aproximado):</label>
+                        <input class="inputForm" type="text" id="nombre" name="nombre" required="required" placeholder="Escriba su nombre y apellido">
                     </li>
                     <li>
-                        <label class="textForm" for="maderas">Tipo de Madera:</label>
-                        <input class="inputForm" type="text" id="maderas" name="user_mail">
+                        <label class="textForm" for="celular">Celular:</label>
+                        <input class="inputForm" type="text" id="celular" name="celular" required="required" placeholder="Su celular de contacto">
                     </li>
+                    <li>
+                        <label class="textForm" for="correo">Correo electronico:</label>
+                        <input class="inputForm" type="text" id="correo" name="correo" required="required" placeholder="Su correo electronico">
+                   </li>
+                    <li>
+                        <label class="textForm" for="medidas">Medidas (aproximado):</label>
+                        <input class="inputForm" type="text" id="medidas" name="medidas" required="required" placeholder="Medidas aproximadas de su mueble">
+                    </li>
+                   
                     <li>
                         <label class="textForm" for="descripcion">Descripcion:</label>
-                        <textarea class="inputForm" id="msg" name="descripcion"></textarea>
+                        <p class="textoDescripcion">Si tienes referencias para mostrar, copia y pegue el link. Por ejemplo: Pinterest o imagenes de Google.</p>
+                        <textarea class="inputForm" id="descripcion" name="descripcion" required="required" placeholder="Su mensaje..."></textarea>
                     </li>
+                   
                 </ul>
-                <button class="btnForm"><a href="#seccionAgenda">Enviar</a></button>
+                <button type="submit" class="btnForm">Enviar</button>
             </form>
-        </section>
-
-        <h2 id="seccionAgenda"class="titulo">DIA DE REUNION</h2>
-
-        <section class="agendaContent">        
-            <input type="date" name="" id="calendario"> 
-            <button class="btnEstilos"><a href="#seccionFinal">Confirmar</a></button>
         </section>
 
         <h2 id="seccionFinal"class="titulo">ESPERE A SER LLAMADO</h2>
 
         <section class="final">        
             <img src="../img/ok.png" alt="simbolo ok">
-            <button class="btnEstilos"><a  href="nosotros.html">Volver</a></button>
+            <button class="btnEstilos"><a  href="../index.html">Volver</a></button>
         </section>
     
         <footer class="footerContent">
